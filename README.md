@@ -6,7 +6,7 @@ Este repositório contém a resolução do desafio "Dashboard de Vendas com Powe
 
 ## Estrutura e Desenvolvimento do Projeto
 ### Modelo primário  
-![Imagem do Esquema Estrela e Diagramas](STARSCHEMA.png)
+![Imagem do Esquema Estrela e Diagramas](imagens/STARCHEMA2.png)
 ### Modelagem de Dados
 
 Para a modelagem do banco de dados, utilizei o **SQL Workbench** para criar tanto o diagrama inicial quanto a resolução em **Star Schema**. Essa abordagem visual facilitou a compreensão das relações entre as tabelas e da transformação das tabelas em **Dimensões** e **Tabela Fato**.
@@ -27,4 +27,4 @@ Assim, a **Tabela Fato** (F_Professor) ficou composta por:
 
 A tabela **D_Data** foi configurada para suportar informações temporais sobre o início e fim das atividades dos professores, incluindo semestre e ano de oferta, proporcionando maior granularidade e flexibilidade nas análises de dados baseadas em tempo.
 ### Modelo Final com Tabela Fato  
-![Imagem do Esquema Estrela e Diagramas](STARCHEMA2.png)
+![Imagem do Esquema Estrela e Diagramas](imagens/STARSCHEMA.png)
