@@ -1,4 +1,4 @@
-# Desafio: Dashboard de Vendas com Power BI utilizando Star Schema
+# Desafio: SQL utilizando Star Schema
 
 ## Contexto
 
