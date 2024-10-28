@@ -15,16 +15,16 @@ Para a modelagem do banco de dados, utilizei o **SQL Workbench** para criar tant
   
 - **Diagrama Star Schema**: Realizei uma série de simplificações e modificações para seguir a modelagem em esquema estrela:
   - A tabela **Aluno** foi removida, e as informações essenciais foram distribuídas entre as demais tabelas.
-  - Pré-requisitos foram movidos para a tabela **D_Disciplina**.
-  - A tabela **D_Curso** foi diretamente associada à tabela **Professor**, evitando uma modelagem tipo "Snowflake."
+  - Pré-requisitos foram movidos para a tabela **Dimensão_Disciplina**.
+  - A tabela **Dimensão_Curso** foi diretamente associada à tabela **Professor**, evitando uma modelagem tipo "Snowflake."
 
 Assim, a **Tabela Fato** (F_Professor) ficou composta por:
 - ID (chave substituta da tabela),
 - Nome do professor,
-- Chaves estrangeiras para as tabelas **D_Disciplina**, **D_Curso**, **D_Data**, e **D_Departamento**.
+- Chaves estrangeiras para as tabelas **Dimensão_Disciplina**, **Dimensão_Curso**, **Dimensão_Data**, e **Dimensão_Departamento**.
 
 ### Estrutura de Data
 
-A tabela **D_Data** foi configurada para suportar informações temporais sobre o início e fim das atividades dos professores, incluindo semestre e ano de oferta, proporcionando maior granularidade e flexibilidade nas análises de dados baseadas em tempo.
+A tabela **Dimensão_Data** foi configurada para suportar informações temporais sobre o início e fim das atividades dos professores, incluindo semestre e ano de oferta, proporcionando maior granularidade e flexibilidade nas análises de dados baseadas em tempo.
 ### Modelo Final com Tabela Fato  
 ![Imagem do Esquema Estrela e Diagramas](imagens/STARSCHEMA.png)
